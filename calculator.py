@@ -20,6 +20,8 @@ class Calculator(QtWidgets.QMainWindow):
     def initUI(self):
         self.ui = uic.loadUi("calculator.ui", self)
         self.ui.closeEvent = self.closeEvent
+        self.ui.mouseReleaseEvent = self.mouseReleaseEvent
+        self.ui.mouseMoveEvent = self.mouseMoveEvent
         self.setMouseTracking(True)
         self.show()
 
@@ -54,14 +56,6 @@ class Calculator(QtWidgets.QMainWindow):
         self.logKLM("keyRelease")
         return super().keyReleaseEvent(a0)
 
-    def mouseReleaseEvent(self, a0: QtGui.QMouseEvent) -> None:
-        self.logKLM("mouseRelease")
-        return super().mouseReleaseEvent(a0)
-
-    def mouseMoveEvent(self, a0: QtGui.QMouseEvent) -> None:
-        self.logKLM("mouseMove")
-        return super().mouseMoveEvent(a0)
-
     def keyPressEvent(self, e):
         if e.key() == 16777220:
             self.onClick("=", True)
@@ -92,10 +86,10 @@ class Calculator(QtWidgets.QMainWindow):
                 textField.setText(str(result))
             except SyntaxError:
                 textField.setText(self.err)
-        if input == self.delete:
+        if input == self.clear:
             textField.setText("")
 
-        if input == self.clear:
+        if input == self.delete:
             textField.setText(textField.text()[:-1])
 
     def logKLM(self, eventType):
