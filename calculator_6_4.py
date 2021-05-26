@@ -7,7 +7,8 @@ import pandas as pd
 
 # start program with python3 <scriptname> <userid> <tasknum>
 
-FIELDS = ["timestamp","user_id","task","event","input"]
+FIELDS = ["timestamp", "user_id", "task", "event", "input"]
+
 
 class Calculator(QtWidgets.QMainWindow):
     def __init__(self, userId, taskNum):
@@ -52,9 +53,9 @@ class Calculator(QtWidgets.QMainWindow):
         self.connectButton(self.ui.btn_clear, self.clear)
 
     def closeEvent(self, event):
-        self.df = self.df.to_csv(f"./data_{self.userId}_{self.taskNum}.csv", index=False)
-        
-    
+        self.df = self.df.to_csv(
+            f"./data_{self.userId}_{self.taskNum}.csv", index=False)
+
     def connectButton(self, btn, text):
         btn.clicked.connect(lambda x: self.onClick(text, False))
 

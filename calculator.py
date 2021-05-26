@@ -7,6 +7,7 @@ import pandas as pd
 
 FIELDS = ["timestamp", "event"]
 
+
 class Calculator(QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
@@ -49,8 +50,7 @@ class Calculator(QtWidgets.QMainWindow):
 
     def closeEvent(self, event):
         self.df = self.df.to_csv("./data.csv", index=False)
-        
-    
+
     def connectButton(self, btn, text):
         btn.clicked.connect(lambda x: self.onClick(text, False))
 
