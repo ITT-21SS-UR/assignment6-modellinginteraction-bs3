@@ -83,4 +83,4 @@ if __name__ == "__main__":
     print(
         f"With original estimates (Card et. al): {origialEstimate} Milliseconds")
     print(
-        f"With original estimates (Own): {ownEstimate} Milliseconds")
+        f"With own estimates: {ownEstimate} Milliseconds")
