@@ -21,7 +21,7 @@ class Calculator(QtWidgets.QMainWindow):
         self.err = "Syntax Error"
         self.initUI()
         self.connectButtons()
-        print("timestamp,user_id, task, event, input")
+        print("timestamp, user_id, task, event, input")
 
     def initUI(self):
         self.ui = uic.loadUi("calculator.ui", self)
