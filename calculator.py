@@ -1,5 +1,5 @@
 import sys
-from PyQt5 import uic, QtWidgets
+from PyQt5 import QtGui, uic, QtWidgets
 from datetime import datetime
 import pandas as pd
 
@@ -50,6 +50,17 @@ class Calculator(QtWidgets.QMainWindow):
     def connectButton(self, btn, text):
         btn.clicked.connect(lambda x: self.onClick(text, False))
 
+    def keyReleaseEvent(self, a0: QtGui.QKeyEvent) -> None:
+        self.logKLM("keyRelease")
+        return super().keyReleaseEvent(a0)
+
+    def mouseReleaseEvent(self, a0: QtGui.QMouseEvent) -> None:
+        self.logKLM("mouseRelease")
+        return super().mouseReleaseEvent(a0)
+
+    def mouseMoveEvent(self, a0: QtGui.QMouseEvent) -> None:
+        self.logKLM("mouseMove")
+        return super().mouseMoveEvent(a0)
 
     def keyPressEvent(self, e):
         if e.key() == 16777220:
