@@ -1,3 +1,5 @@
+# this script was written by Erik Blank
+
 import sys
 from PyQt5 import QtGui, uic, QtWidgets
 from datetime import datetime

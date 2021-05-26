@@ -1,7 +1,11 @@
+# this script was written by Erik Blank
+
 import sys
 from PyQt5 import QtGui, uic, QtWidgets
 from datetime import datetime
 import pandas as pd
+
+# start program with python3 <scriptname> <userid> <tasknum>
 
 FIELDS = ["timestamp","user_id","task","event","input"]
 
@@ -55,7 +59,7 @@ class Calculator(QtWidgets.QMainWindow):
         btn.clicked.connect(lambda x: self.onClick(text, False))
 
     def keyReleaseEvent(self, a0: QtGui.QKeyEvent) -> None:
-        self.logKLM("keyRelease")
+        self.logKLM("keyRelease", a0.text())
         return super().keyReleaseEvent(a0)
 
     def keyPressEvent(self, e):
@@ -68,9 +72,9 @@ class Calculator(QtWidgets.QMainWindow):
 
     def onClick(self, input, isKeyPress):
         if isKeyPress:
-            self.logKLM("keyPress")
+            self.logKLM("keyPress", input)
         else:
-            self.logKLM("mouseClick")
+            self.logKLM("mouseClick", input)
         textField = self.ui.text_result
         numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
         operators = [".", "*", "/", "+", "-"]
@@ -93,13 +97,16 @@ class Calculator(QtWidgets.QMainWindow):
 
         if input == self.delete:
             textField.setText(textField.text()[:-1])
-#"timestamp,user_id, task, event, input"
+
     def logKLM(self, eventType, input):
         timestamp = datetime.now()
         print(f'{timestamp},{self.userId},{self.taskNum},{eventType},{input}')
         self.df = self.df.append({
             "timestamp": timestamp,
-            "event": eventType
+            "user_id": self.userId,
+            "task": self.taskNum,
+            "event": eventType,
+            "input": input
         }, ignore_index=True)
 
 
