@@ -16,6 +16,14 @@ class KierasDurations(Enum):
     m = 1200
 
 
+class OwnDurations(Enum):
+    k = 90
+    p = 750
+    b = 100
+    h = 1250
+    m = 1200
+
+
 def extractOperations():
     # Extract every oparation for klm out of textfile
     operations = []
@@ -71,6 +79,8 @@ def calculate_klm(operations, factors):
 if __name__ == "__main__":
     operations = extractOperations()
     origialEstimate = calculate_klm(operations, KierasDurations)
-    # origialEstimate = calculate_klm(operations, false)
+    ownEstimate = calculate_klm(operations, OwnDurations)
     print(
         f"With original estimates (Card et. al): {origialEstimate} Milliseconds")
+    print(
+        f"With original estimates (Own): {ownEstimate} Milliseconds")
