@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # Script was written by Michael Schmidt
+# (Also textfiles with instructions)
 
 import sys
 from enum import Enum
