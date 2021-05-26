@@ -1,0 +1,11 @@
+# Calculating the result of (3^2 + 4^2) * 15.2 using only the mouse
+m # Thinking which operation to calculate first
+3k # Entering 3 x 3
+k # Entering plus
+m # Thinking about calculation
+3k # Entering 4 x 4
+m # Thinking that you have to click on result
+k # Calculating result
+k # Entering multiply
+4k # Entering 15.2
+k # Calculating result
