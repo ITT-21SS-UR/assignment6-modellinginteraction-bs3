@@ -30,8 +30,8 @@ def extractOperations():
 
         print(f"Found operations {operations}")
         return operations
-    except:
-        print("There was an error with reading from the operations file.")
+    except Exception as e:
+        print("There was an error with reading from the operations file. " + e)
         sys.exit(1)
 
 
@@ -48,7 +48,8 @@ def calculate_klm(operations, factors):
     for operation in operations:
         for index, char in enumerate(operation):
             digitFactor = ""
-            # if digit is found, complete digit, save as factor and multiple next instruction with it
+            # if digit is found, complete indented number, save as factor
+            # and multiple next instruction with it
             if (char.isdigit()):
                 j = index
                 while(operation[j].isdigit()):
