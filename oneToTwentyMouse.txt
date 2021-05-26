@@ -1,0 +1,25 @@
+# Adding the numbers from 1 to 20 using only the mouse
+m # Remembering to add numbers
+pbbpbb # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+pbbpbb # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+pbbpbb # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+pbbpbb # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+pbbpbb # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+pbbpbb # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+pbbpbb # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+pbbpbb # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+pbbpbb # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+pbbpbb # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+# here begin double digits
+pbbpbbpbb # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+pbbpbbpbb # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+pbbpbbpbb # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+pbbpbbpbb # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+pbbpbbpbb # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+pbbpbbpbb # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+pbbpbbpbb # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+pbbpbbpbb # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+pbbpbbpbb # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+pbbpbbpbb # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+pbbpbb # Pointing to button and clicking it and releasing it (only for number 20)
+pbb # Pointing to result and clicking it and releasing it

@@ -1,0 +1,25 @@
+# Adding the numbers from 1 to 20 using only the keyboard
+m # Remembering to add numbers
+2k # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+2k # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+2k # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+2k # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+2k # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+2k # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+2k # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+2k # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+2k # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+2k # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+# here begin double digits
+3k # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+3k # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+3k # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+3k # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+3k # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+3k # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+3k # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+3k # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+3k # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+3k # Pointing to button and clicking it and releasing it (twice one for number one for plus)
+2k # Pointing to button and clicking it and releasing it (only for number 20)
+k # Pressing enter for the result
